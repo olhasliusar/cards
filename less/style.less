@@ -1,0 +1,125 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lora);
+@width: 10px;
+@height: 10px;
+
+body{
+	font: 400 16px/1.3 'Lora' Helvetica, Arial, sans-serif;
+	background: rgba(65,0,87,1);
+    background: linear-gradient(135deg, rgba(65,0,87,1) 0%, rgba(54,0,71,1) 11%, rgba(100,0,143,1) 27%, rgba(52,0,71,1) 49%, rgba(80,0,112,1) 71%, rgba(117,2,156,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#410057', endColorstr='#75029c', GradientType=1 );
+}
+
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ba-flex{
+	&__container{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__el{
+		margin: 20px;
+		flex-grow:1;
+	}
+}
+
+.ba-back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 10px;
+	backface-visibility:hidden;
+	transform:rotateY( 180deg );
+	background: rgba(235,233,249,1);
+    background: linear-gradient(135deg, rgba(235,233,249,1) 0%, rgba(207,178,240,1) 10%, rgba(216,208,239,1) 22%, rgba(211,174,235,1) 34%, rgba(216,208,239,1) 47%, rgba(207,178,240,1) 60%, rgba(216,208,239,1) 72%, rgba(207,178,240,1) 85%, rgba(193,191,234,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=1 );
+}
+
+.ba-card{
+	background-color: #FFF;
+	border-radius: 10px;
+	position: relative;
+	transform-style:preserve-3d;
+	    transition: transform 1s;
+
+	&_light{
+		color: #FB3F51;
+	}
+
+	&:hover{
+		cursor: pointer;
+		transform:rotateY( 180deg );
+	}
+
+}
+
+.ba-title{
+	position: absolute;
+
+	h1{
+		font-size: 36px;
+		line-height: 40px;
+		font-weight: 400;
+		text-align: center;
+		margin: 0;
+	}
+}
+.ba-head{
+	top: @width;
+	left: @height;
+}
+.ba-footer{
+	bottom: @width;
+	right: @height;
+	transform: rotate(180deg);
+}
+
+.ba-front__wrapper{
+	width: 100px;
+	height: 260px;
+	margin: 15px 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+
+	&_one-column {
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	&_small{
+		align-items: stretch;
+	}
+}
+
+.ba-icon{
+	font-size: 50px;
+	line-height: 50px;
+	margin: 0;
+
+	&__container{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&_big{
+		font-size: 90px;
+	}
+}
+.ba-icon__container:not(:first-child):not(:last-child){
+	justify-content: center;
+
+	& .ba-icon{
+		margin: 45px 0;
+	}
+}
+
