@@ -148,5 +148,10 @@ body {
 .ba-icon__container:not(:first-child):not(:last-child) .ba-icon {
   margin: 45px 0;
 }
+.ba-front__item_top {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
 
 /*# sourceMappingURL=style.css.map */
