@@ -22,6 +22,7 @@ body{
 	&__container{
 		display: flex;
 		justify-content: space-between;
+		perspective: 800px;
 	}
 	&__el{
 		margin: 20px;
@@ -44,11 +45,13 @@ body{
 }
 
 .ba-card{
+	max-width: 200px;
 	background-color: #FFF;
 	border-radius: 10px;
 	position: relative;
 	transform-style:preserve-3d;
-	    transition: transform 1s;
+	transition: transform 1s;
+
 
 	&_light{
 		color: #FB3F51;
@@ -72,6 +75,7 @@ body{
 		margin: 0;
 	}
 }
+
 .ba-head{
 	top: @width;
 	left: @height;

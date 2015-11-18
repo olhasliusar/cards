@@ -22,6 +22,8 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-perspective: 800px;
+          perspective: 800px;
 }
 .ba-flex__el {
   margin: 20px;
@@ -47,6 +49,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=1);
 }
 .ba-card {
+  max-width: 200px;
   background-color: #FFF;
   border-radius: 10px;
   position: relative;
